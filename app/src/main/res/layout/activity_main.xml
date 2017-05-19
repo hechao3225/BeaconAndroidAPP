@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dip"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+
+        android:id="@+id/frameLayout"
+        android:background="@android:color/holo_blue_dark">
+
+
+        <TextView
+            android:layout_width="223dp"
+            android:layout_height="37dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/beacon_center"
+            android:textSize="30dp"
+            android:id="@+id/title"
+            android:layout_gravity="left|bottom"
+            android:textColor="@color/abc_primary_text_disable_only_material_dark"
+            android:singleLine="false"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_share"
+            android:layout_gravity="right|top"
+            android:layout_margin="20dp"
+            android:background="@drawable/abc_ic_menu_share_mtrl_alpha" />
+
+        <ImageButton
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:id="@+id/btn_about"
+            android:background="@android:drawable/ic_dialog_email"
+            android:layout_marginRight="60dp"
+            android:layout_gravity="right|top"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_ble"
+            android:layout_gravity="left|top"
+            android:background="@android:drawable/stat_sys_data_bluetooth"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp" />
+
+    </FrameLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:text="Beacon扫描"
+        android:id="@+id/btn_scan"
+        android:layout_marginTop="50dp"
+
+        android:background="@null"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/frameLayout"
+        android:layout_marginLeft="140dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:text="@string/history"
+        android:id="@+id/btn_history"
+        android:layout_marginTop="35dp"
+
+        android:background="@null"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/btn_scan"
+        android:layout_marginLeft="140dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:text="@string/location"
+        android:id="@+id/btn_location"
+        android:layout_marginTop="35dp"
+        android:background="@null"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/btn_history"
+        android:layout_marginLeft="140dp" />
+
+    <ImageView
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:id="@+id/imageView"
+        android:layout_alignBottom="@+id/btn_scan"
+        android:background="@drawable/abc_ic_search_api_mtrl_alpha"
+        android:layout_alignTop="@+id/btn_scan"
+        android:layout_marginLeft="100dp" />
+
+    <ImageView
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:id="@+id/imageView2"
+        android:background="@android:drawable/stat_notify_sdcard"
+       android:layout_alignTop="@+id/btn_history"
+        android:layout_marginLeft="100dp" />
+
+    <ImageView
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:id="@+id/imageView3"
+        android:background="@android:drawable/ic_dialog_map"
+        android:layout_alignTop="@+id/btn_location"
+        android:layout_marginLeft="100dp" />
+
+
+</RelativeLayout>
